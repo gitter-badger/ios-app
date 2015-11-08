@@ -24,8 +24,6 @@ That's all folks.
 
 I'm going to regularly deploy releases to the App Store.
 
-#### So how do I find out what version is cuurrently running on my.geofancy.com?
-Just look for the App Store version number, I'm going to tag the releases here on GitHub.
 
 ## Issues
 
