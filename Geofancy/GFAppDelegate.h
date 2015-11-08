@@ -14,7 +14,6 @@
 #import "GFGeofenceManager.h"
 #import "GFCloudManager.h"
 #import "GFRequestManager.h"
-#import "GFWhatsUpNotifier.h"
 
 @interface GFAppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -23,7 +22,6 @@
 @property (strong, nonatomic) GFGeofenceManager *geofenceManager;
 @property (strong, nonatomic) GFCloudManager *cloudManager;
 @property (strong, nonatomic) GFRequestManager *requestManager;
-@property (strong, nonatomic) GFWhatsUpNotifier *whatsupNotifier;
 @property (nonatomic, strong) AFNetworkReachabilityManager *reachabilityManager;
 
 @end

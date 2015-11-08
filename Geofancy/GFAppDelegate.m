@@ -29,7 +29,6 @@
     self.geofenceManager = [GFGeofenceManager sharedManager];
     self.cloudManager = [GFCloudManager sharedManager];
     self.requestManager = [GFRequestManager sharedManager];
-    self.whatsupNotifier = [GFWhatsUpNotifier sharedNotifier];
     self.harpy = [Harpy sharedInstance];
     
     // Reachability
@@ -127,9 +126,6 @@
 {
     [self.requestManager flushWithCompletion:^{
         completionHandler(UIBackgroundFetchResultNewData);
-//        [self.whatsupNotifier fetchWhatsUpAndNotifyWithCompletion:^{
-//            completionHandler(UIBackgroundFetchResultNewData);
-//        }];
     }];
 }
 

@@ -26,7 +26,6 @@
 		2A59CD7018F93E380062A0FE /* GFCloudSignupViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A59CD6F18F93E380062A0FE /* GFCloudSignupViewControllerTests.m */; };
 		2A74C2DA180B13F9008A13B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A74C2D9180B13F9008A13B9 /* Security.framework */; };
 		2A7D40B5186475F000F9A61A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7D40B4186475F000F9A61A /* MessageUI.framework */; };
-		2A8D852418AE154C00CF2693 /* GFWhatsUpNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D852318AE154C00CF2693 /* GFWhatsUpNotifier.m */; };
 		2A8D852618AE3ED000CF2693 /* whatsup.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D852518AE3ED000CF2693 /* whatsup.caf */; };
 		2A8D852918AE3F4700CF2693 /* GFConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D852818AE3F4700CF2693 /* GFConfig.m */; };
 		2A8E9D9717FD51DD00F4A805 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8E9D9617FD51DD00F4A805 /* Foundation.framework */; };
@@ -145,8 +144,6 @@
 		2A686FD5196BDA20000C4B62 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A74C2D9180B13F9008A13B9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2A7D40B4186475F000F9A61A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		2A8D852218AE154C00CF2693 /* GFWhatsUpNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFWhatsUpNotifier.h; sourceTree = "<group>"; };
-		2A8D852318AE154C00CF2693 /* GFWhatsUpNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFWhatsUpNotifier.m; sourceTree = "<group>"; };
 		2A8D852518AE3ED000CF2693 /* whatsup.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whatsup.caf; sourceTree = "<group>"; };
 		2A8D852718AE3F4700CF2693 /* GFConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFConfig.h; sourceTree = "<group>"; };
 		2A8D852818AE3F4700CF2693 /* GFConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFConfig.m; sourceTree = "<group>"; };
@@ -434,8 +431,6 @@
 				2A918276186B1B630088EF91 /* GFBackgroundBlockOperation.m */,
 				2AD67FB418817E6C003840C8 /* GFRequestManager.h */,
 				2AD67FB518817E6C003840C8 /* GFRequestManager.m */,
-				2A8D852218AE154C00CF2693 /* GFWhatsUpNotifier.h */,
-				2A8D852318AE154C00CF2693 /* GFWhatsUpNotifier.m */,
 				2A8D852718AE3F4700CF2693 /* GFConfig.h */,
 				2A8D852818AE3F4700CF2693 /* GFConfig.m */,
 			);
@@ -891,7 +886,6 @@
 				2A8D852918AE3F4700CF2693 /* GFConfig.m in Sources */,
 				2A2BF520185371B800D5DD98 /* GFCloudManager.m in Sources */,
 				2AD67FB318817BD5003840C8 /* GFRequest.m in Sources */,
-				2A8D852418AE154C00CF2693 /* GFWhatsUpNotifier.m in Sources */,
 				2A8E9DA317FD51DD00F4A805 /* main.m in Sources */,
 				2AB31B701805571B00FC839B /* GFSettings.m in Sources */,
 				2A27D24D18057C0100AC1708 /* NSString+URLEncode.m in Sources */,
