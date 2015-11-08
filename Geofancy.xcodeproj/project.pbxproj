@@ -570,6 +570,7 @@
 				EC3C13E319B178CF0093F139 /* Resources */,
 				D622AF3209AC4A738636E0D4 /* Copy Pods Resources */,
 				8334B1EC3C3128670B9DEBA2 /* Embed Pods Frameworks */,
+				ECC803751BEF49D400314FE5 /* Fix disallowed 'Frameworks' */,
 			);
 			buildRules = (
 			);
@@ -845,6 +846,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeofancyWidget/Pods-GeofancyWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		ECC803751BEF49D400314FE5 /* Fix disallowed 'Frameworks' */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fix disallowed 'Frameworks'";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
 		};
 		ECCCABA91B04EA4F0040FED2 /* Increment Build */ = {
 			isa = PBXShellScriptBuildPhase;
