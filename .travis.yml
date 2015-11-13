@@ -4,4 +4,4 @@ xcode_workspace: Geofancy.xcworkspace
 xcode_scheme: Geofancy
 
 script:
-  - xcodebuild CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  - xcodebuild -configuration Debug CODE_SIGN_ENTITLEMENTS="" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
