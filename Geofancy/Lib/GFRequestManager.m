@@ -201,9 +201,6 @@
 - (void) dispatchFencelog:(GFCloudFencelog *)fencelog
 {
     if ([[[GFSettings sharedSettings] apiToken] length] > 0) {
-        if (![self.appDelegate cloudManager]) {
-            [self.appDelegate setCloudManager:[GFCloudManager sharedManager]];
-        }
         [[self.appDelegate cloudManager] dispatchCloudFencelog:fencelog onFinish:nil];
     }
 }

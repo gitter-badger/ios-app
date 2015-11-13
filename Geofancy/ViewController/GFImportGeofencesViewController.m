@@ -11,7 +11,6 @@
 @interface GFImportGeofencesViewController ()
 
 @property (nonatomic, strong) GFAppDelegate *appDelegate;
-@property (nonatomic, strong) GFCloudManager *cloudManager;
 @property (nonatomic, strong) CLGeocoder *geocoder;
 @property (nonatomic, strong) GFGeofence *event;
 
@@ -36,7 +35,6 @@
 {
     [super viewDidLoad];
     self.appDelegate = (GFAppDelegate *)[[UIApplication sharedApplication] delegate];
-    self.cloudManager = [GFCloudManager sharedManager];
     self.geocoder = [[CLGeocoder alloc] init];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -56,7 +54,7 @@
 - (void)loadGeofences
 {
     self.loading = YES;
-    [self.cloudManager loadGeofences:^(NSError *error, NSArray *geofences) {
+    [self.appDelegate.cloudManager loadGeofences:^(NSError *error, NSArray *geofences) {
         if (error) {
             return;
         }

@@ -16,16 +16,12 @@
 
 @implementation GFCloudManager
 
-+ (id) sharedManager
-{
-    static GFCloudManager *cloudManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        cloudManager = [GFCloudManager new];
+- (instancetype)init {
+    self = [super init];
+    if (self) {
         NSLog(@"My Geofancy Backend: %@", kMyGeofancyBackend);
-    });
-    
-    return cloudManager;
+    }
+    return self;
 }
 
 - (AFSecurityPolicy *) commonPolicy

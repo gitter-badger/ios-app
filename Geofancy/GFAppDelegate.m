@@ -27,7 +27,7 @@
 {
     // Override point for customization after application launch.
     self.geofenceManager = [GFGeofenceManager sharedManager];
-    self.cloudManager = [GFCloudManager sharedManager];
+    self.cloudManager = [[GFCloudManager alloc] init];
     self.requestManager = [GFRequestManager sharedManager];
     self.harpy = [Harpy sharedInstance];
     

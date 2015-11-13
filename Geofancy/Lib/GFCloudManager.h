@@ -19,8 +19,6 @@ typedef enum {
 
 @interface GFCloudManager : NSObject
 
-+ (id) sharedManager;
-
 - (void) signupAccountWithUsername:(NSString *)username andEmail:(NSString *)email andPassword:(NSString *)password onFinish:(void(^)(NSError *error, GFCloudManagerSignupError gfcError))finish;
 - (void) loginToAccountWithUsername:(NSString *)username andPassword:(NSString *)password onFinish:(void(^)(NSError *error, NSString *sessionId))finish;
 - (void) checkSessionWithSessionId:(NSString *)sessionId onFinish:(void(^)(NSError *error))finish;
@@ -30,4 +28,5 @@ typedef enum {
 - (void) validateSession;
 - (void) loadGeofences:(void(^)(NSError *error, NSArray *geofences))completion;
 - (void) uploadGeofence:(GFGeofence *)geofence onFinish:(void(^)(NSError *error))finish;
+
 @end
