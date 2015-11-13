@@ -2,6 +2,3 @@ osx_image: xcode7.1
 language: objective-c
 xcode_workspace: Geofancy.xcworkspace
 xcode_scheme: Geofancy
-
-script:
-  - xcodebuild clean build test -workspace Geofancy.xcworkspace -scheme Geofancy -configuration Debug CODE_SIGN_ENTITLEMENTS="" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
