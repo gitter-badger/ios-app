@@ -1,5 +1,7 @@
 # Geofancy for iOS
 
+![TravisCI](https://api.travis-ci.org/Geofancy/ios-app.svg?branch=master)
+
 ![Screenshot](screenshot.png)
 
 
