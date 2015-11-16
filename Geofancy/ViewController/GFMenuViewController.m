@@ -73,7 +73,7 @@
             [self askToOpenSocialLink:@"GitHub Issues" callback:^{
                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/Geofancy/ios-app/issues"]];
             }];
-        } else if (indexPath.row == 4) {
+        } else if (indexPath.row == 5) {
             [self askToOpenSocialLink:@"Twitter" callback:^{
                 if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"twitter://"]]) {
                     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"twitter://user?screen_name=geofancy"]];
@@ -83,7 +83,7 @@
             }];
 
             [[(GFAppDelegate *)[[UIApplication sharedApplication] delegate] dynamicsDrawerViewController] setPaneState:MSDynamicsDrawerPaneStateClosed animated:YES allowUserInterruption:YES completion:nil];
-        } else if (indexPath.row == 5) {
+        } else if (indexPath.row == 6) {
             [self askToOpenSocialLink:@"Facebook" callback:^{
                 if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"fb://"]]) {
                     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"fb://profile/329978570476013"]];

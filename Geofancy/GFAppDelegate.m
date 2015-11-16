@@ -39,7 +39,7 @@
     
     // Initial Setup (if required)
     if (![[GFSettings sharedSettings] appHasBeenStarted]) {
-        [[GFSettings sharedSettings] setSoundOnNotification:[NSNumber numberWithBool:YES]];
+        [[GFSettings sharedSettings] setAppHasBeenStarted:[NSNumber numberWithBool:YES]];
         [[GFSettings sharedSettings] persist];
     }
 

@@ -185,7 +185,7 @@
 {
     [_settings setNotifyOnSuccess:[NSNumber numberWithBool:_notifyOnSuccessSwitch.on]];
     [_settings setNotifyOnFailure:[NSNumber numberWithBool:_notifyOnFailureSwitch.on]];
-    [_settings setSoundOnNotification:[NSNumber numberWithBool:_notifyOnFailureSwitch.on]];
+    [_settings setSoundOnNotification:[NSNumber numberWithBool:_soundOnNotificationSwitch.on]];
 }
 
 - (IBAction) sendTestRequest:(id)sender
