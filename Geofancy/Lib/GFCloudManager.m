@@ -28,6 +28,7 @@
 {
     AFSecurityPolicy *policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     [policy setAllowInvalidCertificates:YES];
+    [policy setValidatesDomainName:NO];
     return policy;
 }
 
